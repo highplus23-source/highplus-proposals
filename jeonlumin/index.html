@@ -1,0 +1,729 @@
+<!--
+  전루민안과 마케팅 제안서 (최종)
+  ─────────────────────────────────────────
+  플레이스, 블로그, 유튜브, 구글 네 채널을 저희가 직접 운영하는 전문 마케터 입장에서
+  설명하고, 이 채널들을 어떻게 연계해서 운영하는지 보여주는 구성입니다.
+  홈페이지(jrmoph.com) 자체에 대한 진단/평가는 넣지 않았습니다 (저희 서비스 범위가 아님).
+
+  발송 전 채울 것
+  1. 4장 "확대하고 싶은 진료" / "오셨으면 하는 환자군" : 원장님 상담 후 확정 (지금은 [상담 후 확정] 자리표시)
+  2. 4장 키워드 도출 : 예시로 넣어둔 키워드이니 원장님이 미실 키워드로 교체
+
+  근거 자료
+  블로그 : 미운영, 인스타그램 : 계정 없음, 유튜브 : 미운영, 구글 마케팅 : 미운영
+  네이버 플레이스 : 마곡동안과 1위, 발산역안과 1위, 강서구안과 6위
+  사진은 원장님 프로필과 원내 전경뿐, 방문자 리뷰 20건 (경쟁 병원 461~2,908건)
+  주력 진료 : 백내장, 안구건조증, 각막질환, 근시, 녹내장
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>하이플러스컴퍼니 전루민안과 마케팅 제안서</title>
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
+<style>
+  :root{
+    --navy:#12131c;
+    --blue:#3478F6;
+    --blue-dark:#1A4FE0;
+    --pale:#d7dae3;
+    --bg:#e9ebf1;
+    --white:#ffffff;
+    --ink:#14151d;
+    --ink-70:#4a4c5a;
+    --ink-muted:#8b8da0;
+    --line:#e2e4ec;
+    --problem-tint:#fbf1f1;
+    --problem-line:#eeddde;
+    --problem-ink:#9a4040;
+    --ease-out:cubic-bezier(.23,1,.32,1);
+    --serif:Georgia,'Times New Roman',serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;word-break:keep-all;overflow-wrap:break-word;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'Pretendard', -apple-system, BlinkMacSystemFont, 'Noto Sans KR', sans-serif;
+    background:var(--bg);
+    color:var(--ink);
+    font-size:16px;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+    padding:36px 16px;
+  }
+  img{max-width:100%;display:block;}
+  a{color:inherit;text-decoration:none;}
+
+  h1,h2,h3{font-weight:800;letter-spacing:-0.02em;line-height:1.2;color:var(--navy);text-wrap:balance;}
+  h1{font-size:clamp(2.1rem,6.5vw,2.8rem);line-height:1.28;}
+  h2{font-size:clamp(1.7rem,5vw,1.95rem);margin-bottom:32px;}
+  h3{font-size:1.35rem;font-weight:700;}
+  p{font-size:16px;color:var(--ink-70);}
+  .caption{font-size:14px;color:var(--ink-muted);font-weight:600;}
+
+  /* ---------- 페이지(장) ---------- */
+  .chapter{
+    background:var(--white);
+    border:1px solid var(--line);
+    border-radius:3px;
+    max-width:720px;
+    margin:0 auto 18px;
+    padding:64px 52px;
+  }
+  .chapter-num{
+    display:block;font-family:var(--serif);font-weight:400;
+    font-size:3rem;color:var(--pale);line-height:1;margin-bottom:14px;
+  }
+  .doc-label{
+    font-size:14px;font-weight:800;color:var(--blue-dark);
+    text-transform:uppercase;letter-spacing:.06em;display:block;margin-bottom:22px;
+  }
+  .doc-logo{
+    display:block;height:30px;width:auto;margin-bottom:22px;
+  }
+
+  /* ---------- 1장 : 히어로 ---------- */
+  .hero p.lead{font-size:17px;color:var(--ink-70);margin:20px 0 32px;max-width:560px;}
+
+  .board-label{display:block;font-size:15.5px;font-weight:800;color:var(--blue-dark);letter-spacing:.01em;margin:6px 0 14px;}
+  .status-board{border:1px solid var(--line);border-radius:3px;overflow:hidden;background:var(--white);}
+  .status-row{display:grid;grid-template-columns:118px 70px 1fr;gap:14px;align-items:center;padding:14px 18px;border-bottom:1px solid var(--line);}
+  .status-row:last-child{border-bottom:none;}
+  .status-name{font-size:15px;font-weight:800;color:var(--ink);letter-spacing:-0.01em;}
+  .status-badge{font-size:12px;font-weight:800;padding:3px 0;border-radius:3px;text-align:center;white-space:nowrap;}
+  .status-badge.on{background:#eef4ff;color:var(--blue-dark);border:1px solid #cfdefc;}
+  .status-badge.off{background:var(--problem-tint);color:var(--problem-ink);border:1px solid var(--problem-line);}
+  .status-note{font-size:13px;color:var(--ink-70);line-height:1.55;}
+  .board-note{font-size:15.5px;line-height:1.75;color:var(--ink-70);margin:0 0 30px;max-width:560px;}
+  .board-note b{color:var(--ink);font-weight:700;}
+  .board-sum{margin-top:20px;font-size:15px;line-height:1.7;color:var(--ink-70);background:#f7f8fb;border-left:3px solid var(--blue);padding:14px 18px;border-radius:2px;}
+  .board-sum b{color:var(--ink);font-weight:800;}
+
+  /* ---------- 2장 : 문제/해결 ---------- */
+  .ps-pair{display:grid;grid-template-columns:1fr auto 1fr;gap:14px;align-items:stretch;margin-bottom:18px;}
+  .ps-pair:last-of-type{margin-bottom:40px;}
+  .ps-card{border-radius:3px;padding:22px 22px;}
+  .ps-problem{background:var(--problem-tint);border:1px solid var(--problem-line);}
+  .ps-solution{background:var(--white);border:1px solid var(--blue);}
+  .ps-tag{font-size:13px;font-weight:800;margin-bottom:10px;display:block;text-transform:uppercase;letter-spacing:.04em;}
+  .ps-problem .ps-tag{color:var(--problem-ink);}
+  .ps-solution .ps-tag{color:var(--blue-dark);}
+  .ps-card h3{font-size:16.5px;margin-bottom:8px;color:var(--ink);}
+  .ps-card p{font-size:14.5px;line-height:1.6;color:var(--ink-70);}
+  .ps-arrow{display:flex;align-items:center;justify-content:center;color:var(--ink-muted);font-size:20px;}
+
+  /* ---------- 3장 : 집행 항목 ---------- */
+  .exec-group{margin-bottom:28px;}
+  .exec-group:last-child{margin-bottom:0;}
+  .exec-head{display:flex;align-items:center;gap:8px;margin-bottom:14px;flex-wrap:wrap;}
+  .exec-head b{font-size:16px;font-weight:800;color:var(--navy);letter-spacing:-0.01em;}
+  .badge{font-size:12px;font-weight:800;letter-spacing:.02em;padding:3px 9px;border-radius:3px;border:1px solid var(--blue);color:var(--blue-dark);}
+  .badge.gray{border-color:var(--line);color:var(--ink-muted);}
+  .exec-list{border:1px solid var(--line);border-radius:3px;overflow:hidden;background:var(--white);}
+  .exec-item{padding:14px 18px;border-bottom:1px solid var(--line);}
+  .exec-item:last-child{border-bottom:none;}
+  .exec-item b{display:block;font-size:14.5px;font-weight:800;color:var(--ink);margin-bottom:3px;}
+  .exec-item p{font-size:13.5px;line-height:1.6;color:var(--ink-70);}
+
+  .flow-num{
+    display:inline-flex;align-items:center;justify-content:center;
+    width:22px;height:22px;border-radius:50%;background:var(--navy);color:#fff;
+    font-size:12px;font-weight:800;flex:0 0 auto;
+  }
+  .flow-why{
+    font-size:13.5px;line-height:1.65;color:var(--ink-70);
+    background:#f7f8fb;border-left:3px solid var(--blue);
+    padding:10px 14px;margin-top:10px;border-radius:2px;
+  }
+  .cadence{
+    display:inline-block;font-size:11px;font-weight:700;color:var(--ink-muted);
+    background:#f1f2f6;padding:2px 7px;border-radius:2px;margin-left:6px;letter-spacing:.01em;
+    vertical-align:middle;
+  }
+
+  .evidence-row{display:flex;gap:10px;margin-top:14px;}
+  .evidence-link{
+    display:flex;align-items:center;gap:8px;background:#fafbfd;border:1px solid var(--line);
+    border-radius:3px;padding:6px;flex:1;overflow:hidden;
+  }
+  .evidence-link img{width:44px;height:26px;object-fit:cover;border-radius:2px;flex:0 0 auto;}
+  .evidence-link span{font-size:12.5px;font-weight:700;color:var(--blue-dark);line-height:1.3;}
+
+  .evidence-shot{margin-top:10px;border:1px solid var(--line);border-radius:3px;overflow:hidden;background:#fafbfd;}
+  .evidence-shot img{width:100%;height:auto;display:block;cursor:zoom-in;transition:opacity .2s;}
+  .evidence-shot img:hover{opacity:.92;}
+  .evidence-shot span{display:block;font-size:12.5px;font-weight:700;color:var(--blue-dark);padding:8px 10px;}
+
+  /* 사진 클릭하면 크게 보기 */
+  .lightbox{position:fixed;inset:0;z-index:100;display:none;align-items:center;justify-content:center;padding:24px;background:rgba(0,0,0,.86);cursor:zoom-out;}
+  .lightbox.open{display:flex;}
+  .lightbox img{max-width:100%;max-height:100%;width:auto;height:auto;border-radius:4px;box-shadow:0 12px 48px rgba(0,0,0,.5);}
+  .lightbox .lb-close{position:fixed;top:16px;right:20px;font-size:30px;font-weight:700;color:#fff;line-height:1;cursor:pointer;opacity:.85;}
+  .lightbox .lb-close:hover{opacity:1;}
+
+  .yt-embed{position:relative;cursor:pointer;border:1px solid var(--line);border-radius:3px;overflow:hidden;background:#000;margin-top:14px;line-height:0;}
+  .yt-embed img{width:100%;height:auto;display:block;opacity:.9;transition:opacity .2s;}
+  .yt-embed:hover img{opacity:1;}
+  .yt-btn{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:60px;height:42px;background:rgba(210,30,30,.94);border-radius:10px;transition:background .2s;pointer-events:none;}
+  .yt-embed:hover .yt-btn{background:#e62121;}
+  .yt-btn::after{content:"";position:absolute;top:50%;left:52%;transform:translate(-50%,-50%);border-style:solid;border-width:10px 0 10px 17px;border-color:transparent transparent transparent #fff;}
+  .yt-cap{position:absolute;left:0;right:0;bottom:0;font-size:12.5px;font-weight:700;color:#fff;line-height:1.4;background:linear-gradient(transparent,rgba(0,0,0,.78));padding:22px 12px 9px;pointer-events:none;}
+  .yt-embed iframe{width:100%;aspect-ratio:16/9;display:block;border:0;}
+  .yt-embed.playing{cursor:default;}
+
+  .yt-link{display:inline-flex;align-items:center;gap:6px;margin-top:12px;font-size:13px;font-weight:700;color:var(--blue-dark);border:1px solid #cfdefc;background:#eef4ff;padding:7px 12px;border-radius:3px;transition:background .18s;}
+  .yt-link:hover{background:#e2ecff;}
+
+  .combo-note{font-size:13.5px;color:var(--ink-muted);margin-top:10px;}
+
+  /* 적합한 구성 카드 */
+  .combo-wrap{border:1px solid var(--line);border-radius:4px;background:var(--white);padding:24px 22px;}
+  .combo-wrap .combo-title{display:block;text-align:center;font-size:15.5px;font-weight:800;color:var(--navy);margin-bottom:18px;}
+  .combo-best{background:var(--navy);border-radius:6px;padding:20px 22px;box-shadow:0 8px 22px rgba(16,17,25,.14);}
+  .combo-best .combo-name{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.03em;color:var(--navy);background:#a9c4ff;padding:3px 11px;border-radius:20px;margin-bottom:11px;}
+  .combo-best .combo-desc{display:block;font-size:16.5px;font-weight:800;color:#fff;line-height:1.4;letter-spacing:-0.01em;}
+  .combo-best .combo-sub{display:block;font-size:13px;color:#c2c8dd;margin-top:9px;line-height:1.55;}
+  .combo-alt-label{display:block;font-size:12px;font-weight:700;color:var(--ink-muted);margin:20px 0 10px;letter-spacing:.02em;}
+  .combo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;}
+  .combo-alt{border:1px solid var(--line);border-radius:5px;padding:13px 15px;background:#fafbfd;}
+  .combo-alt .combo-name{display:block;font-size:12px;font-weight:800;color:var(--blue-dark);margin-bottom:5px;}
+  .combo-alt .combo-desc{display:block;font-size:13px;font-weight:700;color:var(--ink);line-height:1.45;}
+  .combo-wrap .combo-note{text-align:center;margin-top:16px;}
+
+  /* ---------- 4장 : 프로필 / 키워드 ---------- */
+  .top-note{
+    background:var(--white);border:1px solid var(--line);border-left:3px solid var(--blue);
+    color:var(--ink);border-radius:2px;padding:14px 18px;font-size:14.5px;font-weight:700;margin-bottom:28px;
+  }
+  .profile-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:8px;}
+  .profile-card{background:var(--white);border:1px solid var(--line);border-radius:3px;padding:18px 16px;}
+  .profile-card .caption{display:block;margin-bottom:8px;}
+  .profile-card .val{font-size:15px;font-weight:700;color:var(--ink);line-height:1.5;}
+  .profile-card .val.tbd{color:var(--ink-muted);font-weight:600;}
+
+  .converge{display:flex;flex-direction:column;align-items:center;gap:6px;margin:18px 0;}
+  .converge .arrow-down{color:var(--ink-muted);font-size:20px;}
+
+  .kw-box{background:var(--white);border:1px solid var(--line);border-radius:3px;padding:22px;text-align:center;margin-bottom:6px;}
+  .kw-box .caption{margin-bottom:12px;}
+  .kw-tags{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;}
+  .kw-tag{background:transparent;border:1px solid var(--blue);color:var(--blue-dark);font-size:14px;font-weight:700;padding:7px 13px;border-radius:3px;}
+
+  .freq-badge{
+    display:inline-flex;align-items:center;gap:8px;background:var(--navy);color:#fff;
+    font-size:14.5px;font-weight:700;padding:10px 20px;border-radius:3px;margin:16px auto 0;
+  }
+  .freq-wrap{text-align:center;margin-bottom:48px;}
+
+  /* ---------- 타겟 환자 ---------- */
+  .persona{padding:26px 0;border-top:1px solid var(--line);}
+  .persona:first-of-type{border-top:none;padding-top:4px;}
+  .persona:last-of-type{padding-bottom:0;}
+  .persona-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:2px;}
+  .persona-letter{
+    display:inline-flex;align-items:center;justify-content:center;
+    width:26px;height:26px;border-radius:50%;background:var(--navy);color:#fff;
+    font-family:var(--serif);font-size:14px;font-weight:700;flex:0 0 auto;
+  }
+  .persona-head h3{font-size:17px;color:var(--ink);}
+  .persona-tag{font-size:12px;font-weight:800;padding:3px 10px;border-radius:3px;border:1px solid var(--blue);color:var(--blue-dark);letter-spacing:.01em;white-space:nowrap;}
+  .persona-tag.top{background:var(--blue);color:#fff;border-color:var(--blue);}
+  .persona-desc{font-size:14.5px;line-height:1.62;color:var(--ink-70);margin:10px 0 16px;}
+  .persona-grid{display:grid;grid-template-columns:1.05fr 1fr 1.2fr;border:1px solid var(--line);border-radius:3px;overflow:hidden;}
+  .persona-col{padding:14px 16px;border-right:1px solid var(--line);}
+  .persona-col:last-child{border-right:none;}
+  .persona-col .caption{display:block;margin-bottom:10px;font-size:12.5px;}
+  .persona-kw{display:flex;flex-wrap:wrap;gap:6px;}
+  .persona-kw span{background:#f1f2f6;color:var(--ink-70);font-size:12.5px;font-weight:600;padding:4px 9px;border-radius:3px;}
+  .persona-col p{font-size:13.5px;line-height:1.55;color:var(--ink);}
+
+  /* ---------- AEO/GEO ---------- */
+  .aeo-intro{font-size:1.2rem;line-height:1.5;margin-bottom:28px;color:var(--navy);text-align:center;}
+  .aeo-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:52px;}
+  .aeo-card{background:var(--white);border:1px solid var(--line);border-radius:3px;padding:20px 24px;}
+  .aeo-badge-row{display:flex;flex-direction:column;align-items:flex-start;gap:8px;margin-bottom:18px;}
+  .aeo-label{
+    font-size:12.5px;font-weight:900;color:var(--blue-dark);letter-spacing:.08em;
+    text-transform:uppercase;border-bottom:2px solid var(--blue);padding-bottom:3px;
+  }
+  .aeo-badge-row span.aeo-desc{font-size:14.5px;font-weight:700;color:var(--ink);}
+
+  .bubble-q{
+    background:#f1f2f6;color:var(--ink-70);font-size:14px;font-weight:600;
+    padding:10px 14px;border-radius:3px;display:inline-block;margin-bottom:14px;max-width:100%;
+  }
+  .ai-answer{display:flex;gap:10px;margin-bottom:16px;}
+  .ai-avatar{
+    width:24px;height:24px;border-radius:50%;background:var(--navy);flex:0 0 auto;
+    display:flex;align-items:center;justify-content:center;font-size:10px;color:#fff;font-weight:800;
+  }
+  .ai-answer p{font-size:14px;line-height:1.6;color:var(--ink);}
+
+  .aeo-divider{border:none;border-top:1px solid var(--line);margin:16px 0 12px;}
+  .source-row{display:flex;align-items:center;gap:8px;}
+  .source-row .caption{margin:0;}
+  .source-chip{
+    display:inline-flex;align-items:center;gap:5px;background:transparent;border:1px solid var(--blue);
+    color:var(--blue-dark);font-size:13px;font-weight:700;padding:4px 10px;border-radius:3px;
+  }
+
+  .geo-highlight{background:var(--white);border:1px solid var(--line);border-left:3px solid var(--blue);border-radius:2px;padding:12px 14px;margin-bottom:8px;}
+  .geo-highlight b{display:block;font-size:15px;color:var(--blue-dark);margin-bottom:4px;}
+  .geo-highlight span{font-size:13px;color:var(--ink-70);}
+
+  footer{padding:28px 22px 8px;text-align:center;}
+  footer p{font-size:13px;color:var(--ink-muted);line-height:1.9;}
+
+  /* ---------- REVEAL (움직임 없이, 옅게 나타남) ---------- */
+  .reveal{opacity:0;transition:opacity 420ms ease;}
+  .reveal.in{opacity:1;}
+
+  @media (max-width:720px){
+    body{padding:16px 10px;}
+    .chapter{padding:40px 24px;margin-bottom:12px;}
+    .status-row{grid-template-columns:1fr auto;gap:6px 12px;align-items:center;}
+    .status-note{grid-column:1 / -1;}
+    .ps-pair{grid-template-columns:1fr;}
+    .ps-arrow{transform:rotate(90deg);padding:2px 0;}
+    .profile-grid{grid-template-columns:1fr;}
+    .aeo-grid{grid-template-columns:1fr;}
+    .combo-grid{grid-template-columns:1fr;}
+    .persona-grid{grid-template-columns:1fr;}
+    .persona-col{border-right:none;border-bottom:1px solid var(--line);}
+    .persona-col:last-child{border-bottom:none;}
+  }
+
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto;}
+    .reveal{transition:none;}
+  }
+
+  /* ---------- 인쇄, PDF 저장용 ---------- */
+  @media print{
+    @page{size:A4;margin:12mm 10mm;}
+    html,body{background:var(--white);padding:0;}
+    .reveal{opacity:1 !important;transition:none;}
+    .chapter{
+      border:none;border-radius:0;max-width:none;
+      margin:0 auto;padding:0 0 18px;
+      break-after:page;page-break-after:always;
+    }
+    .chapter:last-of-type{break-after:auto;page-break-after:auto;}
+    .persona,.status-board,.kw-box,.exec-item,.profile-grid,.combo-grid,.aeo-grid,.ps-pair{
+      break-inside:avoid;page-break-inside:avoid;
+    }
+    img{max-width:100%;}
+    footer{break-before:avoid;page-break-before:avoid;}
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ 1장 : 표지 ============ -->
+<section class="chapter hero" id="ch1">
+  <span class="chapter-num reveal in">01</span>
+  <img class="doc-logo reveal in" src="assets/highplus_logo.png" alt="하이플러스컴퍼니" width="1234" height="416">
+  <h1 class="reveal in">전루민안과<br>마케팅 제안서</h1>
+  <p class="lead reveal in">새 환자, 즉 초진이 병원을 어떤 경로로 찾아오는지부터 정리했습니다. 지금 그 통로가 몇 개나 열려 있는지 보시면, 무엇을 채워야 할지 분명해집니다.</p>
+
+  <p class="board-note reveal in">다행히 콘텐츠로 풀어낼 주제는 충분합니다. 전루민안과는 백내장, 안구건조증, 각막질환에 더해 <b>근시(드림렌즈, 저농도 아트로핀, 마이사이트 등)와 녹내장까지 다섯 개 분야</b>를 진료하고 계십니다. 환자들이 실제로 검색하는 주제들이라, 하나씩 콘텐츠로 만들면 비어 있는 채널을 채우는 동시에 새로운 유입 통로가 열립니다.</p>
+
+  <span class="board-label reveal in">지금 초진이 들어오는 통로</span>
+  <div class="status-board reveal in">
+    <div class="status-row">
+      <span class="status-name">네이버 플레이스</span>
+      <span class="status-badge on">운영 중</span>
+      <span class="status-note">등록은 되어 있지만 안을 채우는 관리가 아직입니다. 사진은 프로필과 원내 전경 정도이고 리뷰는 20건입니다. 같은 지역 경쟁 병원들이 리뷰 461~2,908건을 확보한 것과 비교하면, 검색에 걸려도 환자가 선택할 근거가 부족한 상태입니다.</span>
+    </div>
+    <div class="status-row">
+      <span class="status-name">네이버 블로그</span>
+      <span class="status-badge off">미운영</span>
+      <span class="status-note">증상과 질환을 검색해서 들어오는 환자를 받을 글이 아직 없습니다.</span>
+    </div>
+    <div class="status-row">
+      <span class="status-name">유튜브</span>
+      <span class="status-badge off">미운영</span>
+      <span class="status-note">원장님을 직접 보여주며 신뢰를 쌓을 영상 채널이 없습니다.</span>
+    </div>
+    <div class="status-row">
+      <span class="status-name">구글</span>
+      <span class="status-badge off">미운영</span>
+      <span class="status-note">구글 검색과 AI 검색으로 이어질 통로가 비어 있습니다.</span>
+    </div>
+  </div>
+
+  <div class="board-sum reveal in">지금 제대로 열려 있는 통로는 사실상 <b>네이버 플레이스 한 곳</b>입니다. 저희가 블로그, 유튜브, 구글을 앞의 진료 분야로 하나씩 채우고 서로 연결하면, 유입 경로가 여러 개로 늘어나고 AEO, GEO까지 이어집니다.</div>
+</section>
+
+<!-- ============ 2장 : 문제와 해결 ============ -->
+<section class="chapter" id="ch2">
+  <span class="chapter-num reveal">02</span>
+  <h2 class="reveal">점검해본 채널들</h2>
+
+  <div class="ps-pair reveal">
+    <div class="ps-card ps-problem">
+      <span class="ps-tag">지금은</span>
+      <h3>블로그를 아직 운영하지 않고 계십니다</h3>
+      <p>백내장, 안구건조증, 각막질환, 근시, 녹내장처럼 전문 분야가 다섯 개나 되는데, 이걸 풀어내는 글이 아직 없어서 아쉽습니다. 환자들이 증상으로 검색해서 병원을 찾는 경우가 많다 보니, 이 콘텐츠가 쌓이면 분명 도움이 될 것 같습니다.</p>
+    </div>
+    <div class="ps-arrow">→</div>
+    <div class="ps-card ps-solution">
+      <span class="ps-tag">제안</span>
+      <h3>전문 분야별로 블로그를 함께 채워가면 어떨까요</h3>
+      <p>다섯 개 분야를 나눠 순서대로 포스팅합니다. 의료인 감수를 거쳐 발행하고, 담당 에디터를 고정해 발행이 끊기지 않게 관리합니다.</p>
+    </div>
+  </div>
+
+  <div class="ps-pair reveal">
+    <div class="ps-card ps-problem">
+      <span class="ps-tag">지금은</span>
+      <h3>플레이스 사진과 리뷰가 아직 부족합니다</h3>
+      <p>등록은 되어 있지만 안을 채우는 관리가 아직입니다. 사진은 프로필과 원내 전경 정도이고 리뷰는 20건입니다. 같은 지역 경쟁 병원들이 리뷰 461~2,908건을 확보한 것과 비교하면, 검색에 걸려도 환자가 선택할 근거가 부족한 상태입니다.</p>
+    </div>
+    <div class="ps-arrow">→</div>
+    <div class="ps-card ps-solution">
+      <span class="ps-tag">제안</span>
+      <h3>진료실, 상담실 사진을 채우고 리뷰도 함께 늘려보면 어떨까요</h3>
+      <p>눈에 띄는 색 위주로 다양한 진료실과 상담실, 원장님 진료 모습을 채워 전문성이 드러나도록 정리하고, 내원 환자분들이 자연스럽게 리뷰를 남기실 수 있도록 안내 방법도 같이 설계하겠습니다.</p>
+    </div>
+  </div>
+
+  <div class="ps-pair reveal">
+    <div class="ps-card ps-problem">
+      <span class="ps-tag">지금은</span>
+      <h3>구글 쪽은 아직 손대지 않으셨습니다</h3>
+      <p>지금 네이버 노출이 들쭉날쭉한 상황인데, 구글 검색 쪽으로는 활동이 없어서 노출을 넓힐 다른 통로가 없는 상태입니다.</p>
+    </div>
+    <div class="ps-arrow">→</div>
+    <div class="ps-card ps-solution">
+      <span class="ps-tag">제안</span>
+      <h3>구글 지도 등록과 게시물로 구글 마케팅을 시작해보면 어떨까요</h3>
+      <p>구글 지도에 병원을 등록하고 꾸준히 게시물을 올려 구글 검색에서 자리를 잡습니다. 이렇게 쌓인 콘텐츠는 챗GPT, 제미나이 같은 AI 검색에도 함께 잡히기 쉬워집니다.</p>
+    </div>
+  </div>
+
+  <div class="ps-pair reveal">
+    <div class="ps-card ps-problem">
+      <span class="ps-tag">지금은</span>
+      <h3>유튜브도 아직 운영하지 않고 계십니다</h3>
+      <p>노안이나 백내장처럼 설명이 필요한 진료일수록 원장님이 직접 설명하는 영상에서 신뢰가 생기는데, 촬영과 편집 인력을 따로 두기는 부담스러우실 것 같습니다.</p>
+    </div>
+    <div class="ps-arrow">→</div>
+    <div class="ps-card ps-solution">
+      <span class="ps-tag">제안</span>
+      <h3>AI로 유튜브를 시작하고 블로그와 연계해보면 어떨까요</h3>
+      <p>촬영 없이 AI로 영상을 만들어 채널을 운영하고, 블로그 글을 바탕으로 만든 영상을 블로그와 유튜브에 함께 올립니다. 구글 콘텐츠와 맞물리면 노출을 서로 끌어올려 줍니다.</p>
+    </div>
+  </div>
+
+</section>
+
+<!-- ============ 3장 : 저희가 집행하는 항목 ============ -->
+<section class="chapter" id="ch3">
+  <span class="chapter-num reveal">03</span>
+  <h2 class="reveal">저희가 집행하는 항목</h2>
+  <p class="lead reveal" style="margin:0 0 28px;">아래 순서대로 하나씩 채워갑니다. 병원 상황에 맞춰 필요한 단계까지만 진행해도 됩니다.</p>
+
+  <div class="exec-group reveal">
+    <div class="exec-head"><span class="flow-num">1</span><b>블로그</b><span class="badge">직접 실행</span></div>
+    <div class="exec-list">
+      <div class="exec-item"><b>네이버 블로그 관리</b><p>의료법을 준수한 원고와 네이버 SEO 최적화 포스팅입니다. 발행 주기 기준으로 운영하고 전담 에디터가 배정됩니다.</p></div>
+      <div class="exec-item"><b>네이버 서브 블로그 운영</b><p>서브 블로그를 추가로 육성합니다.</p></div>
+    </div>
+  </div>
+
+  <div class="exec-group reveal">
+    <div class="exec-head"><span class="flow-num">2</span><b>플레이스</b><span class="badge">직접 실행</span></div>
+    <div class="exec-list">
+      <div class="exec-item"><b>네이버 플레이스 최적화</b><p>기본 정보를 세팅하고 검색 순위를 관리합니다. 순위 변화는 리포트로 드립니다.</p></div>
+    </div>
+  </div>
+
+  <div class="exec-group reveal">
+    <div class="exec-head"><span class="flow-num">3</span><b>구글 마케팅</b><span class="badge">직접 실행</span></div>
+    <div class="exec-list">
+      <div class="exec-item"><b>구글 마케팅</b><p>구글 지도에 병원을 등록하고, 꾸준한 게시물로 구글 검색 노출을 만듭니다. 발행 주기는 병원 상황에 맞춰 정합니다.</p></div>
+    </div>
+    <p class="flow-why">지금 네이버 노출이 들쭉날쭉한 상황이라, 구글 쪽에서 먼저 자리를 잡아두는 편이 안전합니다. 여기에 쌓인 콘텐츠는 챗GPT, 제미나이 같은 AI 검색에도 함께 잡히기 쉬워집니다.</p>
+  </div>
+
+  <div class="exec-group reveal">
+    <div class="exec-head"><span class="flow-num">4</span><b>유튜브</b><span class="badge">직접 실행</span></div>
+    <div class="exec-list">
+      <div class="exec-item"><b>병원 유튜브 AI</b><p>AI로 영상을 만들어 촬영 없이 채널을 운영합니다. 블로그, 구글 콘텐츠와 연계됩니다.</p></div>
+      <div class="exec-item">
+        <b>네이버 블로그, 유튜브 콘텐츠 연계</b>
+        <p>발행된 블로그 글을 바탕으로 50초 내외 원장님 AI 영상을 만들어 블로그와 유튜브에 함께 올립니다.</p>
+        <a class="yt-link" href="https://www.youtube.com/watch?v=kRZznpPPWwM" target="_blank" rel="noopener">▶ AI 유튜브 예시 보기 (유튜브에서 열기)</a>
+        <div class="evidence-shot">
+          <img src="assets/blog_youtube_example.png" alt="블로그 유튜브 연계 예시">
+          <span>블로그에 유튜브를 연계한 실제 예시 (인주한방병원) · 사진을 누르면 크게 보실 수 있습니다</span>
+        </div>
+      </div>
+    </div>
+    <p class="flow-why">구글에 쌓인 콘텐츠를 영상 소재로 전환하면, 같은 주제가 텍스트와 영상 두 형태로 동시에 노출됩니다. 유튜브는 AI 검색이 인용하는 비중이 높아, 구글 콘텐츠와 맞물릴 때 채널 간 상호 참조가 늘고 검색 노출이 서로를 끌어올리는 구조가 만들어집니다.</p>
+  </div>
+
+  <div class="exec-group reveal">
+    <div class="exec-head"><span class="flow-num">5</span><b>인스타그램</b><span class="badge gray">선택 항목</span></div>
+    <div class="exec-list">
+      <div class="exec-item"><b>인스타그램 관리</b><p>피드 톤앤매너를 설계하고 카드뉴스와 해시태그를 관리합니다. 원하실 때 추가로 진행할 수 있습니다.</p></div>
+    </div>
+  </div>
+
+  <div class="exec-group reveal">
+    <div class="exec-head"><b>디자인, 웹 구축</b><span class="badge">직접 실행</span></div>
+    <div class="exec-list">
+      <div class="exec-item"><b>블로그 디자인</b><p>스킨, 타이틀, 위젯을 병원 아이덴티티에 맞게 정리합니다.</p></div>
+      <div class="exec-item"><b>병원 홈페이지 제작</b><p>기획, 카피, 디자인, 개발까지 올인원으로 진행합니다.</p></div>
+      <div class="exec-item"><b>랜딩페이지 제작</b><p>이벤트나 시술 하나를 전환에 최적화한 1페이지로 만듭니다.</p></div>
+      <div class="exec-item"><b>이벤트 디자인</b><p>휴무 안내, 팝업, 카드뉴스, 썸네일을 제작합니다.</p></div>
+    </div>
+  </div>
+
+  <div class="exec-group reveal">
+    <div class="exec-head"><b>일회성 추가항목</b></div>
+    <div class="exec-list">
+      <div class="exec-item"><b>지역 카페 바이럴 <span class="cadence">건별</span></b><p>맘카페와 지역 커뮤니티에 정보성 게시물을 올리고 자연스러운 반응을 유도합니다.</p></div>
+      <div class="exec-item"><b>언론보도 <span class="cadence">건별</span></b><p>보도자료를 작성해 주요 매체에 배포합니다. 병원 신뢰도를 높이고 AI 검색이 인용하는 출처로도 쓰입니다.</p></div>
+      <div class="exec-item"><b>지식인 <span class="cadence">건별</span></b><p>질문과 답변 형식으로 병원 정보를 올립니다.</p></div>
+      <div class="exec-item"><b>리뷰, 민원 대응 <span class="cadence">상시</span></b><p>플레이스와 리뷰에 올라오는 민원 대응을 함께 처리합니다.</p></div>
+    </div>
+  </div>
+
+  <div class="combo-wrap reveal">
+    <span class="combo-title">전루민안과에 적합한 구성</span>
+
+    <div class="combo-best">
+      <span class="combo-name">올인원 추천</span>
+      <span class="combo-desc">블로그 + 플레이스 + 유튜브 AI + 구글 마케팅</span>
+      <span class="combo-sub">네 채널을 함께 채우고 서로 연결해, 유입을 여러 갈래로 넓히면서 AEO, GEO까지 확장하는 구성입니다. 지금처럼 플레이스 한 곳에 유입이 몰려 있는 상황일수록, 채널을 분산하고 서로 시너지를 내기에 가장 완결성 있는 선택입니다.</span>
+    </div>
+
+    <span class="combo-alt-label">그 외 선택 가능한 구성</span>
+    <div class="combo-grid">
+      <div class="combo-alt">
+        <span class="combo-name">검색 기본기</span>
+        <span class="combo-desc">블로그 + 플레이스</span>
+      </div>
+      <div class="combo-alt">
+        <span class="combo-name">콘텐츠 확장</span>
+        <span class="combo-desc">블로그 + 유튜브 AI</span>
+      </div>
+      <div class="combo-alt">
+        <span class="combo-name">AI, 구글 강화</span>
+        <span class="combo-desc">블로그 + 유튜브 연계 + 구글 마케팅</span>
+      </div>
+    </div>
+
+    <p class="combo-note">상세 구성과 발행 주기는 상담 후 병원 상황에 맞춰 조정합니다.</p>
+  </div>
+</section>
+
+<!-- ============ 4장 : 잡아야 할 환자 ============ -->
+<section class="chapter" id="ch4">
+  <span class="chapter-num reveal">04</span>
+  <h2 class="reveal">전루민안과가 잡아야 할 환자</h2>
+  <p class="lead reveal" style="margin:0 0 32px;">같은 안과 환자라도 검색하는 방식과 병원을 고르는 기준이 다릅니다. 전루민안과의 강점이 통하는 세 부류를 정하고, 각각에 맞는 콘텐츠로 잡습니다.</p>
+
+  <div class="persona reveal">
+    <div class="persona-head">
+      <span class="persona-letter">A</span>
+      <h3>안과는 가기로 했고 어디로 갈지 고르는 사람</h3>
+      <span class="persona-tag">전환 임박</span>
+    </div>
+    <p class="persona-desc">눈에 문제가 있다는 건 인지했고, 이제 어느 안과를 갈지 정하는 단계입니다. 지역명으로 검색해 바로 내원으로 이어지는 초진층입니다.</p>
+    <div class="persona-grid">
+      <div class="persona-col">
+        <span class="caption">검색어 (예시)</span>
+        <div class="persona-kw"><span>마곡동 안과</span><span>발산역 안과</span><span>강서구 안과 추천</span></div>
+      </div>
+      <div class="persona-col">
+        <span class="caption">병원을 고르는 기준</span>
+        <p>가까운지, 검사와 설명을 제대로 해주는지</p>
+      </div>
+      <div class="persona-col">
+        <span class="caption">붙이는 콘텐츠</span>
+        <p>원장님 전공과 진료 범위를 정면에 둔 글, 초진 검사와 첫 방문 안내</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="persona reveal">
+    <div class="persona-head">
+      <span class="persona-letter">B</span>
+      <h3>진단은 받았는데 시기를 미루는 사람</h3>
+      <span class="persona-tag">길게 키우는 층</span>
+    </div>
+    <p class="persona-desc">백내장이라는 말은 들었지만 아직 견딜 만하다고 생각합니다. 검색 기간이 길고 그 사이 여러 병원 글을 읽습니다.</p>
+    <div class="persona-grid">
+      <div class="persona-col">
+        <span class="caption">검색어 (예시)</span>
+        <div class="persona-kw"><span>백내장 초기 증상</span><span>백내장 방치하면</span><span>백내장 진행 속도</span></div>
+      </div>
+      <div class="persona-col">
+        <span class="caption">병원을 고르는 기준</span>
+        <p>미루면 어떻게 되는지 솔직하게 말해주는가</p>
+      </div>
+      <div class="persona-col">
+        <span class="caption">붙이는 콘텐츠</span>
+        <p>백내장 진행 단계와 관리법, 언제 진료를 받아야 하는지 기준</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="persona reveal">
+    <div class="persona-head">
+      <span class="persona-letter">C</span>
+      <h3>증상만 있고 병명은 모르는 사람</h3>
+      <span class="persona-tag top">최우선 타겟</span>
+    </div>
+    <p class="persona-desc">눈이 불편한데 원인을 모릅니다. 검색량이 가장 많고 경쟁도 덜합니다. 안구건조증과 각막은 원장님 전공이라 답을 가장 잘 쓸 수 있는 영역입니다.</p>
+    <div class="persona-grid">
+      <div class="persona-col">
+        <span class="caption">검색어 (예시)</span>
+        <div class="persona-kw"><span>눈이 뻑뻑해요</span><span>눈에 뭐가 낀 느낌</span><span>시야가 뿌옇게 보임</span></div>
+      </div>
+      <div class="persona-col">
+        <span class="caption">병원을 고르는 기준</span>
+        <p>내 증상을 정확히 짚어주는지</p>
+      </div>
+      <div class="persona-col">
+        <span class="caption">붙이는 콘텐츠</span>
+        <p>증상에서 병명으로 좁혀가는 글, 안구건조증 자가점검 기준</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 5장 : 그래서 전루민안과는 ============ -->
+<section class="chapter" id="ch5">
+  <span class="chapter-num reveal">05</span>
+  <h2 class="reveal">그래서 전루민안과는</h2>
+
+  <div class="top-note reveal">이 내용을 파악해서 첫 달 키워드를 설계합니다</div>
+
+  <div class="profile-grid reveal">
+    <div class="profile-card">
+      <span class="caption">현재 주력 진료</span>
+      <div class="val">백내장, 안구건조증, 각막질환, 근시, 녹내장</div>
+    </div>
+    <div class="profile-card">
+      <span class="caption">확대하고 싶은 진료</span>
+      <div class="val tbd">[상담 후 확정]</div>
+    </div>
+    <div class="profile-card">
+      <span class="caption">오셨으면 하는 환자군</span>
+      <div class="val tbd">[상담 후 확정]</div>
+    </div>
+  </div>
+
+  <div class="converge reveal"><span class="arrow-down">↓</span></div>
+
+  <div class="kw-box reveal">
+    <span class="caption">키워드 도출 (예시)</span>
+    <div class="kw-tags">
+      <span class="kw-tag">발산역안과</span>
+      <span class="kw-tag">강서구안과</span>
+      <span class="kw-tag">백내장전문</span>
+      <span class="kw-tag">백내장초기증상</span>
+      <span class="kw-tag">발산역드림렌즈</span>
+    </div>
+    <p class="combo-note">주력 진료를 기준으로 예시로 넣어본 키워드입니다. 원장님이 밀고 싶으신 키워드를 알려주시면 그걸로 확정하겠습니다.</p>
+  </div>
+
+  <div class="freq-wrap reveal">
+    <div class="converge" style="margin-bottom:0;"><span class="arrow-down">↓</span></div>
+    <div class="freq-badge">주 2~4회 발행</div>
+  </div>
+
+  <p class="aeo-intro reveal">환자들이 네이버 대신 AI에게 묻기 시작했습니다.<br>그때 답변에 나오는 병원과 안 나오는 병원이 갈립니다.</p>
+
+  <div class="aeo-grid">
+    <div class="aeo-card reveal">
+      <div class="aeo-badge-row"><span class="aeo-label">AEO</span><span class="aeo-desc">우리 글이 답변에 인용됨</span></div>
+      <div class="bubble-q">안구건조증 관리 어떻게 해?</div>
+      <div class="ai-answer">
+        <div class="ai-avatar">AI</div>
+        <p>인공눈물 사용과 함께 눈 주변 온찜질, 화면 사용 시간 조절이 도움이 됩니다. 증상이 오래 지속되면 안과 진료를 통해 원인을 확인하는 것이 좋습니다.</p>
+      </div>
+      <hr class="aeo-divider">
+      <div class="source-row">
+        <span class="caption">출처</span>
+        <span class="source-chip">🔗 전루민안과 블로그</span>
+      </div>
+    </div>
+
+    <div class="aeo-card reveal">
+      <div class="aeo-badge-row"><span class="aeo-label">GEO</span><span class="aeo-desc">우리 병원이 추천됨</span></div>
+      <div class="bubble-q">발산역 백내장 잘하는 안과 추천해줘</div>
+      <div class="ai-answer">
+        <div class="ai-avatar">AI</div>
+        <p>발산역 근처에서는 아래 병원을 살펴보실 만합니다.</p>
+      </div>
+      <div class="geo-highlight">
+        <b>전루민안과</b>
+        <span>백내장 정보가 꾸준히 쌓여있는 병원입니다.</span>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<footer>
+  <p>
+    주식회사 하이플러스컴퍼니, 대표 김태헌, 사업자등록번호 339-88-02845<br>
+    인천광역시 연수구 송도문화로 28번길 28, highplus.work
+  </p>
+</footer>
+
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <span class="lb-close" aria-hidden="true">&times;</span>
+  <img src="" alt="확대 이미지">
+</div>
+
+<script>
+  var els = document.querySelectorAll('.reveal:not(.in)');
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, {threshold:0.12, rootMargin:'0px 0px -30px 0px'});
+  els.forEach(function(el){ io.observe(el); });
+
+  // 유튜브 썸네일 클릭하면 그 자리에서 바로 재생
+  document.querySelectorAll('.yt-embed').forEach(function(el){
+    function play(){
+      var id = el.getAttribute('data-yt');
+      if(!id || el.classList.contains('playing')) return;
+      var f = document.createElement('iframe');
+      f.src = 'https://www.youtube.com/embed/' + id + '?autoplay=1&rel=0';
+      f.title = 'AI 유튜브 예시';
+      f.setAttribute('allow', 'autoplay; encrypted-media; picture-in-picture; fullscreen');
+      f.setAttribute('allowfullscreen', '');
+      el.innerHTML = '';
+      el.classList.add('playing');
+      el.appendChild(f);
+    }
+    el.addEventListener('click', play);
+    el.addEventListener('keydown', function(e){
+      if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); play(); }
+    });
+  });
+
+  // 블로그 예시 등 사진 클릭하면 크게 보기
+  var lb = document.getElementById('lightbox');
+  var lbImg = lb.querySelector('img');
+  function closeLb(){ lb.classList.remove('open'); lbImg.src = ''; }
+  document.querySelectorAll('.evidence-shot img').forEach(function(img){
+    img.addEventListener('click', function(){
+      lbImg.src = img.getAttribute('src');
+      lb.classList.add('open');
+    });
+  });
+  lb.addEventListener('click', closeLb);
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape') closeLb(); });
+</script>
+
+</body>
+</html>
