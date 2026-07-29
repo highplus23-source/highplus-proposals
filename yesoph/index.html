@@ -258,8 +258,13 @@
   .geo-highlight b{display:block;font-size:15px;color:var(--blue-dark);margin-bottom:4px;}
   .geo-highlight span{font-size:13px;color:var(--ink-70);}
 
-  footer{padding:28px 22px 8px;text-align:center;}
-  footer p{font-size:13px;color:var(--ink-muted);line-height:1.9;}
+  /* ---------- 마무리 : 홈페이지 안내 ---------- */
+  .closing{background:var(--navy);border-radius:6px;padding:28px 30px;margin-top:10px;text-align:center;box-shadow:0 8px 22px rgba(16,17,25,.14);}
+  .closing b{display:block;font-size:17px;font-weight:800;color:#fff;letter-spacing:-0.01em;line-height:1.45;margin-bottom:9px;}
+  .closing p{font-size:14px;color:#c2c8dd;line-height:1.65;margin:0 auto 20px;max-width:440px;}
+  .closing a{display:inline-flex;align-items:center;gap:8px;background:#fff;color:var(--navy);font-size:15px;font-weight:800;padding:14px 24px;border-radius:4px;transition:opacity .18s;}
+  .closing a:hover{opacity:.88;}
+  .closing .site{display:block;font-size:12.5px;color:#8b8da0;margin-top:12px;letter-spacing:.01em;}
 
   /* ---------- REVEAL (움직임 없이, 옅게 나타남) ---------- */
   .reveal{opacity:0;transition:opacity 420ms ease;}
@@ -300,7 +305,7 @@
       break-inside:avoid;page-break-inside:avoid;
     }
     img{max-width:100%;}
-    footer{break-before:avoid;page-break-before:avoid;}
+    .closing{break-inside:avoid;page-break-inside:avoid;}
   }
 </style>
 </head>
@@ -592,12 +597,12 @@
   </div>
 </section>
 
-<!-- ============ 5장 : 그래서 예스안과의원은 ============ -->
+<!-- ============ 5장 : 예스안과의원을 위해 제안합니다 ============ -->
 <section class="chapter" id="ch5">
   <span class="chapter-num reveal">05</span>
-  <h2 class="reveal">그래서 예스안과의원은</h2>
+  <h2 class="reveal">예스안과의원을 위해 제안합니다</h2>
 
-  <div class="top-note reveal">이 내용을 파악해서 첫 달 키워드를 설계합니다</div>
+  <div class="top-note reveal">이 내용을 파악해서 키워드를 설계합니다</div>
 
   <div class="profile-grid reveal">
     <div class="profile-card">
@@ -665,14 +670,14 @@
     </div>
   </div>
 
-</section>
 
-<footer>
-  <p>
-    주식회사 하이플러스컴퍼니, 대표 김태헌, 사업자등록번호 339-88-02845<br>
-    인천광역시 연수구 송도문화로 28번길 28, highplus.work
-  </p>
-</footer>
+  <div class="closing reveal">
+    <b>더 자세한 내용은 홈페이지에서 보실 수 있습니다.</b>
+    <p>하이플러스컴퍼니가 병원 마케팅을 어떤 방식으로 운영하는지,<br>어떤 항목을 다루는지 정리해 두었습니다.</p>
+    <a href="https://highplus23-source.github.io/highplus-proposals/highplus/" target="_blank" rel="noopener">하이플러스컴퍼니 홈페이지 보기</a>
+    <span class="site">블로그 대행 서비스 안내</span>
+  </div>
+</section>
 
 <div class="lightbox" id="lightbox" aria-hidden="true">
   <span class="lb-close" aria-hidden="true">&times;</span>
