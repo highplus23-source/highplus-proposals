@@ -228,6 +228,7 @@
 
   /* ---------- AEO/GEO ---------- */
   .aeo-intro{font-size:1.2rem;line-height:1.5;margin-bottom:28px;color:var(--navy);text-align:center;}
+  .aeo-grid.at-bottom{margin:18px 0 0;}
   .aeo-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:52px;}
   .aeo-card{background:var(--white);border:1px solid var(--line);border-radius:3px;padding:20px 24px;}
   .aeo-badge-row{display:flex;flex-direction:column;align-items:flex-start;gap:8px;margin-bottom:18px;}
@@ -598,7 +599,36 @@
     </div>
   </div>
 
-  <div class="top-note at-bottom reveal">최근들어 AI챗봇(챗GPT 나 GEMINI 등)을 통해 검색하는 환자가 늘기 시작했습니다.</div>
+  <div class="top-note at-bottom reveal">최근들어 AI챗봇(챗GPT 나 GEMINI 등)을 통해 검색하는 환자가 늘기 시작했습니다.<br>그 때는 네이버가 아닌 구글에 쌓여있는 정보에 따라 답변에 노출되는 병원과 아닌 병원이 갈리게 됩니다.</div>
+
+  <div class="aeo-grid at-bottom">
+    <div class="aeo-card reveal">
+      <div class="aeo-badge-row"><span class="aeo-label">AEO</span><span class="aeo-desc">우리 글이 답변에 인용됨</span></div>
+      <div class="bubble-q">아이 근시 진행 늦추는 방법 알려줘</div>
+      <div class="ai-answer">
+        <div class="ai-avatar">AI</div>
+        <p>드림렌즈, 저농도 아트로핀, 마이사이트 같은 방법이 쓰이며 아이 상태에 따라 선택이 달라집니다. 진행 속도를 확인하려면 정기적인 검사가 필요합니다.</p>
+      </div>
+      <hr class="aeo-divider">
+      <div class="source-row">
+        <span class="caption">출처</span>
+        <span class="source-chip">🔗 예스안과의원 블로그</span>
+      </div>
+    </div>
+
+    <div class="aeo-card reveal">
+      <div class="aeo-badge-row"><span class="aeo-label">GEO</span><span class="aeo-desc">우리 병원이 추천됨</span></div>
+      <div class="bubble-q">목동 소아안과 어디가 괜찮아?</div>
+      <div class="ai-answer">
+        <div class="ai-avatar">AI</div>
+        <p>목동 근처에서는 아래 병원을 살펴보실 만합니다.</p>
+      </div>
+      <div class="geo-highlight">
+        <b>예스안과의원</b>
+        <span>소아근시 정보가 꾸준히 쌓여있는 병원입니다.</span>
+      </div>
+    </div>
+  </div>
 </section>
 
 <!-- ============ 5장 : 예스안과의원을 위해 제안합니다 ============ -->
@@ -642,38 +672,6 @@
     <div class="converge" style="margin-bottom:0;"><span class="arrow-down">↓</span></div>
     <div class="freq-badge">주 2~4회 발행</div>
   </div>
-
-  <p class="aeo-intro reveal">환자들이 네이버 대신 AI에게 묻기 시작했습니다.<br>그때 답변에 나오는 병원과 안 나오는 병원이 갈립니다.</p>
-
-  <div class="aeo-grid">
-    <div class="aeo-card reveal">
-      <div class="aeo-badge-row"><span class="aeo-label">AEO</span><span class="aeo-desc">우리 글이 답변에 인용됨</span></div>
-      <div class="bubble-q">아이 근시 진행 늦추는 방법 알려줘</div>
-      <div class="ai-answer">
-        <div class="ai-avatar">AI</div>
-        <p>드림렌즈, 저농도 아트로핀, 마이사이트 같은 방법이 쓰이며 아이 상태에 따라 선택이 달라집니다. 진행 속도를 확인하려면 정기적인 검사가 필요합니다.</p>
-      </div>
-      <hr class="aeo-divider">
-      <div class="source-row">
-        <span class="caption">출처</span>
-        <span class="source-chip">🔗 예스안과의원 블로그</span>
-      </div>
-    </div>
-
-    <div class="aeo-card reveal">
-      <div class="aeo-badge-row"><span class="aeo-label">GEO</span><span class="aeo-desc">우리 병원이 추천됨</span></div>
-      <div class="bubble-q">목동 소아안과 어디가 괜찮아?</div>
-      <div class="ai-answer">
-        <div class="ai-avatar">AI</div>
-        <p>목동 근처에서는 아래 병원을 살펴보실 만합니다.</p>
-      </div>
-      <div class="geo-highlight">
-        <b>예스안과의원</b>
-        <span>소아근시 정보가 꾸준히 쌓여있는 병원입니다.</span>
-      </div>
-    </div>
-  </div>
-
 
   <div class="closing reveal">
     <b>더 자세한 내용은 홈페이지에서 확인해 보실 수 있습니다</b>
