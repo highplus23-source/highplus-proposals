@@ -140,6 +140,10 @@
   .evidence-shot img{width:100%;height:auto;display:block;cursor:zoom-in;transition:opacity .2s;}
   .evidence-shot img:hover{opacity:.92;}
   .evidence-shot span{display:block;font-size:12.5px;font-weight:700;color:var(--blue-dark);padding:8px 10px;}
+  .thumb-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px;}
+  .thumb-grid .evidence-shot{margin-top:0;}
+  .thumb-cap{display:block;font-size:12.5px;font-weight:700;color:var(--blue-dark);margin-top:8px;}
+  .thumb-note{font-size:12.5px;color:var(--ink-muted);line-height:1.6;margin-top:6px;}
 
   /* 사진 클릭하면 크게 보기 */
   .lightbox{position:fixed;inset:0;z-index:100;display:none;align-items:center;justify-content:center;padding:24px;background:rgba(0,0,0,.86);cursor:zoom-out;}
@@ -281,6 +285,7 @@
     .ps-arrow{transform:rotate(90deg);padding:2px 0;}
     .profile-grid{grid-template-columns:1fr;}
     .aeo-grid{grid-template-columns:1fr;}
+    .thumb-grid{grid-template-columns:1fr;}
     .combo-grid{grid-template-columns:1fr;}
     .persona-grid{grid-template-columns:1fr;}
     .persona-col{border-right:none;border-bottom:1px solid var(--line);}
@@ -457,6 +462,14 @@
         <b>네이버 블로그, 유튜브 콘텐츠 연계</b>
         <p>발행된 블로그 글을 바탕으로 50초 내외 원장님 AI 영상을 만들어 블로그와 유튜브에 함께 올립니다.</p>
         <a class="yt-link" href="https://www.youtube.com/watch?v=kRZznpPPWwM" target="_blank" rel="noopener">▶ AI 유튜브 예시 보기 (유튜브에서 열기)</a>
+        <span class="thumb-cap">유튜브 썸네일 예시</span>
+        <div class="thumb-grid">
+          <div class="evidence-shot"><img src="assets/yt_thumb_1.jpg" alt="유튜브 썸네일 예시 1"></div>
+          <div class="evidence-shot"><img src="assets/yt_thumb_2.jpg" alt="유튜브 썸네일 예시 2"></div>
+        </div>
+        <p class="thumb-note">썸네일에 들어가는 병원명, 로고, 색상은 예스안과의원에 맞춰 제작합니다.</p>
+
+        <span class="thumb-cap" style="margin-top:16px;">네이버 블로그에서는 이렇게 보여집니다</span>
         <div class="evidence-shot">
           <img src="assets/blog_youtube_example.png" alt="블로그 유튜브 연계 예시">
           <span>블로그에 유튜브를 연계한 실제 예시 (인주한방병원), 사진을 누르면 크게 보실 수 있습니다</span>
