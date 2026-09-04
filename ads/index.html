@@ -1,0 +1,194 @@
+<!-- 하이플러스컴퍼니 광고 항목, 라이트 버전 -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>하이플러스컴퍼니 광고 항목</title>
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
+<style>
+  :root{
+    --navy:#12131c; --blue:#3478F6; --blue-dark:#1A4FE0;
+    --bg:#eceef3; --white:#fff; --ink:#14151d; --ink-70:#4a4c5a; --ink-muted:#8b8da0;
+    --line:#e2e4ec; --tint:#f5f7fb;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;word-break:keep-all;overflow-wrap:break-word;}
+  body{
+    font-family:'Pretendard',-apple-system,BlinkMacSystemFont,'Noto Sans KR',sans-serif;
+    background:var(--bg);color:var(--ink);font-size:15px;line-height:1.65;
+    -webkit-font-smoothing:antialiased;padding:34px 14px 56px;
+  }
+  .sheet{background:var(--white);border:1px solid var(--line);border-radius:4px;max-width:760px;margin:0 auto 16px;padding:40px 38px;}
+  .label{font-size:12.5px;font-weight:800;color:var(--blue-dark);letter-spacing:.08em;display:block;margin-bottom:14px;}
+  h1{font-size:clamp(1.5rem,4.6vw,1.9rem);font-weight:800;letter-spacing:-0.025em;line-height:1.3;color:var(--navy);}
+  .intro{margin-top:16px;font-size:15px;color:var(--ink-70);line-height:1.8;text-wrap:pretty;}
+  .intro b{color:var(--navy);font-weight:800;}
+  .note{margin-top:18px;padding-top:15px;border-top:1px solid var(--line);font-size:13.5px;color:var(--ink-muted);line-height:1.7;}
+
+  h2{font-size:1.02rem;font-weight:800;color:var(--navy);letter-spacing:-0.01em;padding-left:11px;border-left:4px solid var(--navy);margin-bottom:6px;}
+  .h2sub{font-size:13.5px;color:var(--ink-muted);font-weight:700;margin:0 0 20px 15px;}
+
+  /* 단계 */
+  .step{display:grid;grid-template-columns:74px 1fr;gap:16px;padding:20px 0;border-top:1px solid var(--line);}
+  .step:first-of-type{border-top:none;padding-top:4px;}
+  .step-no{}
+  .step-no span{display:block;font-size:11.5px;font-weight:800;color:var(--ink-muted);letter-spacing:.06em;}
+  .step-no b{display:block;font-family:Georgia,serif;font-size:1.85rem;font-weight:400;color:var(--navy);line-height:1.1;}
+  .step-body h3{font-size:16.5px;font-weight:800;color:var(--ink);letter-spacing:-0.01em;margin-bottom:8px;}
+  .step-body h3 em{font-style:normal;font-size:12px;font-weight:800;color:var(--blue-dark);background:#eef4ff;border:1px solid #cfdefc;border-radius:2px;padding:2px 7px;margin-left:7px;vertical-align:2px;}
+  .step-body p{font-size:14.5px;color:var(--ink-70);line-height:1.72;}
+  .step-why{margin-top:9px;padding:11px 14px;background:var(--tint);border-left:3px solid var(--blue);font-size:14px;color:var(--ink);line-height:1.65;}
+  .step-why b{font-weight:800;}
+  .stack{margin-top:10px;font-size:12.5px;font-weight:700;color:var(--ink-muted);}
+
+  /* 그 외 항목 */
+  .more{display:grid;gap:0;border:1px solid var(--line);border-radius:3px;overflow:hidden;}
+  .more-row{display:grid;grid-template-columns:186px 1fr;gap:14px;padding:13px 16px;border-top:1px solid var(--line);}
+  .more-row:first-child{border-top:none;}
+  .more-row strong{font-size:14px;font-weight:800;color:var(--ink);}
+  .more-row span{font-size:13.5px;color:var(--ink-70);line-height:1.6;}
+
+  .close{text-align:center;}
+  .close b{display:block;font-size:1.1rem;font-weight:800;color:var(--navy);margin-bottom:10px;letter-spacing:-0.02em;}
+  .close p{font-size:14.5px;color:var(--ink-70);line-height:1.7;max-width:470px;margin:0 auto 18px;}
+  .close-row{display:inline-flex;gap:9px;flex-wrap:wrap;justify-content:center;}
+  .close-item{border:1px solid var(--line);border-radius:3px;padding:11px 18px;}
+  .close-item span{display:block;font-size:11.5px;font-weight:800;color:var(--ink-muted);margin-bottom:3px;}
+  .close-item strong{font-size:15px;font-weight:800;color:var(--navy);}
+
+  .foot{max-width:760px;margin:0 auto;padding:2px 6px;font-size:12.5px;color:var(--ink-muted);line-height:1.75;}
+
+  @media (max-width:620px){
+    .sheet{padding:28px 20px;}
+    .step{grid-template-columns:1fr;gap:8px;}
+    .more-row{grid-template-columns:1fr;gap:4px;}
+  }
+  @media print{
+    body{background:#fff;padding:0;}
+    .sheet{border:none;margin:0 0 8mm;padding:0;max-width:none;break-inside:avoid;}
+  }
+</style>
+</head>
+<body>
+
+<section class="sheet">
+  <span class="label">HIGHPLUS COMPANY</span>
+  <h1>하이플러스컴퍼니가<br>하는 광고 항목</h1>
+  <p class="intro">
+    지금 환자는 검색으로 병원을 정합니다. 그런데 올해부터 네이버 검색 화면이 계속 바뀌고,
+    구글과 AI가 환자 질문에 직접 답을 주기 시작했습니다. 블로그 하나만 잡고 있기에는
+    불안한 상황이 됐습니다.
+  </p>
+  <p class="intro">
+    <b>그래서 저희는 블로그를 기본으로 깔고, 그 위에 필요한 것을 하나씩 얹는 순서로 진행합니다.</b>
+    전부 다 하실 필요는 없습니다. 아래 순서대로 보시고 지금 병원에 필요한 단계까지만
+    고르시면 됩니다.
+  </p>
+  <p class="note">
+    저희는 매일 병원 검색어를 직접 넣어보면서 검색 화면이 어떻게 바뀌는지 확인합니다.
+    맡겨주시면 원장님 병원 키워드로 확인한 결과를 매달 정리해 보내드립니다.
+  </p>
+</section>
+
+<section class="sheet">
+  <h2>기본부터 하나씩 얹는 순서</h2>
+  <p class="h2sub">1단계만으로도 시작됩니다</p>
+
+  <div class="step">
+    <div class="step-no"><span>STEP</span><b>1</b></div>
+    <div class="step-body">
+      <h3>네이버 블로그<em>기본</em></h3>
+      <p>
+        네이버에 병원 정보를 쌓아서, 아직 병원을 찾아보기 전 단계의 환자에게 신뢰를 주는 광고입니다.
+        의료법을 지킨 원고로 발행하고 전담 에디터가 붙습니다.
+      </p>
+      <div class="step-why"><b>왜 먼저인가</b> 여기서 쌓인 글이 다음 단계 전부의 재료가 됩니다. 유튜브 영상도, 인스타 카드뉴스도 이 원고에서 나옵니다.</div>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-no"><span>STEP</span><b>2</b></div>
+    <div class="step-body">
+      <h3>네이버 플레이스</h3>
+      <p>
+        지역명으로 검색해서 바로 내원까지 이어지는 자리입니다. 기본 정보와 사진을 채우고
+        검색 순위를 관리하며, 순위 변화는 리포트로 드립니다.
+      </p>
+      <div class="step-why"><b>왜 얹는가</b> 환자는 블로그에서 글을 읽고, 플레이스에서 위치와 리뷰를 확인한 다음 전화합니다. 여기가 비면 마지막에 다른 병원으로 넘어갑니다.</div>
+      <p class="stack">여기까지 = 블로그 + 플레이스</p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-no"><span>STEP</span><b>3</b></div>
+    <div class="step-body">
+      <h3>구글</h3>
+      <p>
+        구글 지도에 병원을 등록하고 꾸준히 게시물을 올려 구글 검색에 자리를 잡습니다.
+      </p>
+      <div class="step-why"><b>왜 얹는가</b> 챗GPT나 제미나이는 주로 구글에 쌓인 정보로 답합니다. 구글에 없으면 AI 답변 후보에도 못 듭니다. 아직 대부분의 병원이 비워둔 자리입니다.</div>
+      <p class="stack">여기까지 = 블로그 + 플레이스 + 구글</p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-no"><span>STEP</span><b>4</b></div>
+    <div class="step-body">
+      <h3>유튜브</h3>
+      <p>
+        촬영 없이 AI로 영상을 만들어 채널을 운영합니다. 1단계에서 발행한 블로그 글로
+        50초 내외 원장님 영상을 만들어 블로그와 유튜브에 함께 올립니다.
+      </p>
+      <div class="step-why"><b>왜 얹는가</b> 같은 주제가 글과 영상 두 형태로 동시에 노출됩니다. 원고를 새로 쓰지 않으니 부담도 적습니다.</div>
+      <p class="stack">여기까지 = 블로그 + 플레이스 + 구글 + 유튜브</p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-no"><span>STEP</span><b>5</b></div>
+    <div class="step-body">
+      <h3>인스타그램</h3>
+      <p>
+        피드 톤앤매너를 설계하고 카드뉴스와 해시태그를 관리합니다. 앞 단계에서 만든
+        블로그 원고와 유튜브 영상을 카드뉴스로 다시 씁니다.
+      </p>
+      <div class="step-why"><b>왜 얹는가</b> 인스타는 검색으로 병원을 찾는 자리가 아니라, 다른 데서 병원을 본 환자가 확인차 들어오는 자리입니다. 이미 만든 콘텐츠를 옮겨 담는 방식이라 가볍게 붙습니다.</div>
+      <p class="stack">릴스와 숏폼 제작은 포함되지 않습니다</p>
+    </div>
+  </div>
+</section>
+
+<section class="sheet">
+  <h2>필요할 때 따로 진행하는 것</h2>
+  <p class="h2sub">위 단계와 별개로, 요청하실 때만 진행합니다</p>
+  <div class="more">
+    <div class="more-row"><strong>워드프레스 홈페이지</strong><span>병원 도메인 안에 진료 정보와 칼럼을 쌓아 구글과 AI가 참고하는 출처로 만듭니다. 구축부터 관리까지 저희가 맡습니다.</span></div>
+    <div class="more-row"><strong>병원 홈페이지, 랜딩페이지</strong><span>기획, 카피, 디자인, 개발까지 진행합니다. 이벤트나 시술 하나만 담은 1페이지도 가능합니다.</span></div>
+    <div class="more-row"><strong>블로그 디자인, 이벤트 디자인</strong><span>블로그 스킨과 위젯, 휴무 안내, 팝업, 카드뉴스, 썸네일을 제작합니다.</span></div>
+    <div class="more-row"><strong>서브 블로그</strong><span>블로그를 하나 더 육성해 같은 검색어에서 자리를 하나 더 확보합니다.</span></div>
+    <div class="more-row"><strong>지역 카페 바이럴</strong><span>맘카페와 지역 커뮤니티에 정보성 게시물을 올립니다. 건별로 진행합니다.</span></div>
+    <div class="more-row"><strong>언론보도, 지식인</strong><span>보도자료를 작성해 매체에 배포하고, 질문과 답변 형식으로 병원 정보를 올립니다. 건별로 진행합니다.</span></div>
+    <div class="more-row"><strong>리뷰, 민원 대응</strong><span>플레이스와 리뷰에 올라오는 민원 대응을 함께 처리합니다.</span></div>
+  </div>
+</section>
+
+<section class="sheet close">
+  <b>지금 몇 단계까지 필요한지 먼저 봐드립니다</b>
+  <p>
+    병원명과 지역만 알려주시면, 지금 검색 화면에서 어느 자리가 열려 있고 어디가 비어 있는지
+    확인해서 보내드립니다. 그걸 보고 단계를 고르시면 됩니다.
+  </p>
+  <div class="close-row">
+    <div class="close-item"><span>전화 문의</span><strong>010-2622-3398</strong></div>
+    <div class="close-item"><span>홈페이지</span><strong>highplus.work</strong></div>
+  </div>
+</section>
+
+<p class="foot">
+  발행 주기와 금액은 상담 후 병원 상황에 맞춰 안내드립니다.
+  검색 노출은 검색어와 경쟁 상황에 따라 계속 변동되므로 특정 순위와 성과는 보장하지 않습니다.<br>
+  주식회사 하이플러스컴퍼니, 대표 김태헌, 인천광역시 연수구 송도문화로 28번길 28, highplus.work
+</p>
+
+</body>
+</html>
